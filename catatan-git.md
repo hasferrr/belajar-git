@@ -1,8 +1,22 @@
-# melakukan commit pada git
+# catatan git
+
+## meng-set folder menjadi repository
+
+lakukan change directory terlebih dahulu dengan `cd`
+
+kemudian set folder sebagai repo menggunakan `git init`
+
+```git
+$ git status
+On branch master
+nothing to commit, working tree clean
+```
+
+## melakukan commit pada git
 
 Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
-1. memasukkan file yang akan dicommit ke Staging Area
+1. memasukkan file yang akan di-commit ke Staging Area
 
     untuk menambah file ke Staging Area satu per satu
 
@@ -14,7 +28,7 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
 2. melakukan commit
 
-    melakukan 'login'
+    melakukan 'login' (hanya untuk pertama kali menggunakan git bash)
 
     ```git
     git config --global user.email "you@example.com"
