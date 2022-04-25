@@ -1,15 +1,16 @@
-
 # melakukan commit pada git
 
 Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
 1. memasukkan file yang akan dicommit ke Staging area
 
-    ```git
-    git status
-    git add file.format 
-    git status
-    ```
+    untuk menambah file ke staging area satu per satu
+
+    `git add file.format`
+
+    sekaligus
+
+    `git add .`
 
 2. melakukan commit
 
@@ -21,4 +22,5 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
     ```
 
     melakukan commit
+
     `git commit -m "Deskripsi commit"`
