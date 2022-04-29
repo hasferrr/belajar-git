@@ -1,5 +1,6 @@
 # Resolusi saya
-- Menguasai bahasa Python
-- Menguasai Spreadsheet terutama Microsoft Excel
+
+- Menguasai Excel
+- Menguasai Python
 - Menguasai SQL
 - Bekerja pada suatu perusahaan pada bagian Sistem Informasi Akuntansi atau Data Analyst
