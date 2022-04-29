@@ -75,7 +75,7 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
 4. Melakukan checkout pada file tertentu
 
-    `git checkout [hash] -- file.format`
+    `git checkout <hash> -- file.format`
 
     hash disini adalah lima digit pertama dari hash yang ditampilkan pada log (nomor 3) file yang telah di-commit yang ingin di-checkout
 
@@ -87,3 +87,14 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
     `git status`
 
     `git commit -m "pesan"`
+
+5. Membuat *alias*
+
+    `alias <nama alias>="commandnya"` digunakan untuk menyubstitusikan nama atau alias dengan command tertentu menjadi command tersebut
+
+    ```bash
+    $ alias wkwk="git status"
+    $ wkwk
+    On branch master
+    nothing to commit, working tree clean
+    ```
