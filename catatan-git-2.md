@@ -39,3 +39,21 @@
     Switched to branch 'master'
     M       catatan-git-2.md
     ```
+
+## Merge
+
+ada 2 tipe merge, yaitu
+
+- ***fast forward*** = merge yang ada pada jalur langsung (di depannya)
+- ***three-way merging***
+
+1. Cara merge
+
+    checkout dulu ke branch sebelumnya
+
+    ```bash
+    $ git checkout master
+    Switched to branch 'master'
+    ```
+
+    merge dengan `git merge <branch_yg_mau_di-merge>`
