@@ -49,12 +49,14 @@
     Deleted branch edit-catatan-2 (was 1b5dc6d).
     ```
 
+    branch yang belum di-merge apabila dihapus, akan muncul peringatan bahwa branch tersebut belum dimerge, gunakan `-D` untuk menghapusnya
+
 ## Merge
 
 ada 2 tipe merge, yaitu
 
-- ***fast forward*** = merge yang ada pada jalur langsung (di depannya)
-- ***three-way merging***
+- ***fast forward*** = merge yang ada pada jalur langsung (direct path)
+- ***three-way merging*** = merge branch dengan branch (merge commit / commit dilakukan secara otomatis)
 
 1. Cara merge
 
@@ -77,3 +79,7 @@ ada 2 tipe merge, yaitu
     2 files changed, 57 insertions(+), 1 deletion(-)
     rename catatan-git.md => catatan-git-1.md (100%)
     ```
+
+2. Cek branch mana saja yang sudah di-merge
+
+    `git branch --merged`
