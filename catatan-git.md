@@ -88,13 +88,13 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git commit -m "pesan"`
 
-5. Membuat *alias*
+## Membuat *alias*
 
-    `alias <nama alias>="commandnya"` digunakan untuk menyubstitusikan nama atau alias dengan command tertentu menjadi command tersebut
+`alias <nama alias>="commandnya"` digunakan untuk menyubstitusikan nama atau alias dengan command tertentu menjadi command tersebut
 
-    ```bash
-    $ alias wkwk="git status"
-    $ wkwk
-    On branch master
-    nothing to commit, working tree clean
-    ```
+```bash
+$ alias wkwk="git status"
+$ wkwk
+On branch master
+nothing to commit, working tree clean
+```
