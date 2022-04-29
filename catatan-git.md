@@ -40,6 +40,10 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git commit -m "Deskripsi commit"`
 
+    melakukan commit tanpa memasukkan ke *Staging Area* (tanpa step 1) (tanpa melaukan `git add`)
+
+    `git commit -a -m "Deskripsi commit"`
+
 3. Untuk mengetahui commit-commit apa saja yang sudah dilakukan
 
     melihat **semua** commit yang telah dilakuakan
