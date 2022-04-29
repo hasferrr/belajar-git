@@ -40,6 +40,15 @@
     M       catatan-git-2.md
     ```
 
+4. Cara menghapus branch
+
+    `git branch -d <branch>`
+
+    ```bash
+    $ git branch -d edit-catatan-2
+    Deleted branch edit-catatan-2 (was 1b5dc6d).
+    ```
+
 ## Merge
 
 ada 2 tipe merge, yaitu
@@ -56,4 +65,15 @@ ada 2 tipe merge, yaitu
     Switched to branch 'master'
     ```
 
-    merge dengan `git merge <branch_yg_mau_di-merge>`
+    merge dengan command `git merge <branch>`
+
+    Contoh output :
+
+    ```bash
+    $ git merge edit-catatan-2
+    Merge made by the 'ort' strategy.
+    catatan-git.md => catatan-git-1.md |  0
+    catatan-git-2.md                   | 58 +++++++++++++++++++++++++++++++++++++-
+    2 files changed, 57 insertions(+), 1 deletion(-)
+    rename catatan-git.md => catatan-git-1.md (100%)
+    ```
