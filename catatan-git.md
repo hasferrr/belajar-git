@@ -58,6 +58,21 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git log --file file.format`
 
+    menampilkan visualisasi log atau branch dalam bentuk graph
+
+    `git log --all --decorate --oneline --graph`
+
+    ```bash
+    $ git log --all --decorate --oneline --graph
+    * 8222d0f (HEAD -> master, edit-catatan-2) mengubah catatan-git dan menambahkan file catatan-git-2.md
+    * a8fcee8 Mengubah file hasfer-resolusi
+    * d5c2769 update dan merapihkan catatan-git
+    * f5ccd5f menambahkan cara meng-set repo dengan git init pada catatan dan perubahan kecil lainnya
+    * fe8552c menambahkan nomor 3 dan 4 pada catatan-git.md
+    * bce4316 mengubah isi file catatan-git
+    * 110231e menambahkan file catatan-git.md dan hasfer-resolusi.md
+    ```
+
 4. Melakukan checkout pada file tertentu
 
     `git checkout [hash] -- file.format`
