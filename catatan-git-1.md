@@ -1,5 +1,7 @@
 # Catatan git
 
+catatan ini dibuat dari playlist video-video youtube [GIT & GITHUB](https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf)
+
 ## Meng-set folder menjadi repository
 
 lakukan change directory terlebih dahulu dengan `cd`
