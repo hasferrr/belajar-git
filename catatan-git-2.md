@@ -55,8 +55,8 @@
 
 ada 2 tipe merge, yaitu
 
-- ***fast forward*** = merge yang ada pada jalur langsung (direct path)
-- ***three-way merging*** = merge branch dengan branch (merge commit / commit dilakukan secara otomatis)
+- *fast forward* = merge yang ada pada jalur langsung (direct path)
+- *three-way merging* = merge branch dengan branch (merge dengan commit)
 
 1. Cara merge
 
@@ -83,3 +83,61 @@ ada 2 tipe merge, yaitu
 2. Cek branch mana saja yang sudah di-merge
 
     `git branch --merged`
+
+## Merge conflict
+
+merge dapat terjadi ketika merge dua branch dilakukan, sedangkan kedua branch tersebut mengubah/mengerjakan line/baris yang sama pada suatu file
+
+tipe merge ini adalah *three-way merging*
+
+contohnya, misal branch *master* akan merging dengan branch *branch-2*
+
+```bash
+$ git merge add
+Auto-merging catatan-git-1.md
+CONFLICT (content): Merge conflict in catatan-git-1.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+akan muncul conflict pada text editor sebagai berikut
+
+```plaintext
+<<<<<< HEAD
+catatan ini dibuat dari playlist video-video youtube
+=======
+sumber catatan
+>>>>>> branch-2
+```
+
+`<<< HEAD` merupakan current change atau branch saat ini, `>>> branch-2` merupakan incoming change atau branch yang mau digabungkan
+
+tinggal diedit sesuai preferensi dari conflict tersebut
+
+git marker-nya juga dihapus (tanda `<<<, >>>, dan ===`)
+
+misalnya, conflict tersebut diedit menjadi seperti ini :
+
+```plaintext
+catatan ini dibuat dari playlist youtube
+```
+
+setelah itu, lanjutkan proses merging, dengan melakukan commit
+
+```bash
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   catatan-git-1.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git add catatan-git-1.md
+$ git commit -m "merging branch 'branch-2'"
+[master 33cbce7] merging branch 'branch-2'
+```
+
+merging selesai
