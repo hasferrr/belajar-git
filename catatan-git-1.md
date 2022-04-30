@@ -40,7 +40,7 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git commit -m "Deskripsi commit"`
 
-    melakukan commit tanpa memasukkan ke *Staging Area* (tanpa step 1) (tanpa melaukan `git add`)
+    melakukan commit tanpa memasukkan ke *Staging Area* (tanpa step 1) (tanpa melaukan `git add`) (hanya berlaku untuk *modified* file, bukan *untrack* file, in which harus dimasukkan ke *Staging Area* terlebih dahulu))
 
     `git commit -a -m "Deskripsi commit"`
 
@@ -92,9 +92,17 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
 `alias <nama alias>="commandnya"` digunakan untuk menyubstitusikan nama atau alias dengan command tertentu menjadi command tersebut
 
+alias hanya berlaku satu sesi, sampai git bash di-close
+
 ```bash
 $ alias wkwk="git status"
 $ wkwk
 On branch master
 nothing to commit, working tree clean
+```
+
+alias yang sering digunakan
+
+```bash
+alias graph="git log --all --decorate --oneline --graph"
 ```
