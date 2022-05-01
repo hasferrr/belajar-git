@@ -17,7 +17,8 @@
 
 ## Remote git dari local
 
-cek nama setelah cloning selesai (origin adalah nama default)
+cek nama setelah cloning selesai
+> note : "origin" is the default name for a remote
 
 ```bash
 $ git remote
@@ -83,3 +84,118 @@ To https://github.com/hasferrr/lagi-belajar.git
     git branch -M main
     git push -u origin main
     ```
+
+## Git Fetch dan Pull
+
+Fetch digunakan untuk mendapatkan/melihat perubahan terakhir dari remote repository (github) dan tidak akan mengubah isi local Git
+
+Fetch digunakan untuk mengecek perubahan terakhir dari commit di remote repository
+
+Fetch digunakan apabila terjadi rejection ketika melakukan push karena adanya perubahan pada file/line yang sama yang akan di-push dan file/line pada remote repository (merge/push conflict)
+
+```bash
+$ git push
+To https://github.com/hasferrr/belajar-git.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hasferrr/belajar-git.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+git status masih menunjukkan origin is ahead/lebih dulu 1 commit karena git mengasumsikan bahwa tidak ada perubahan pada remote repository
+
+```bash
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+git fetch digunakan untuk mengecek dulu dimana letak commit pada remote repository dan mengambil data perubahan (tidak dengan file) tersebut dari remote repo
+
+```bash
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 713 bytes | 15.00 KiB/s, done.
+From https://github.com/hasferrr/belajar-git
+   08a8b76..01b0764  main       -> origin/main
+```
+
+cek status lagi, branch akan diverged/dibedakan (karena data telah diambil dari remote dengan fetching)
+
+```bash
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+```
+
+masih cek status, lihat branch-nya have deverged
+
+```bash
+$ git log --all --decorate --oneline --graph
+* 6e819a1 (HEAD -> main) menambahkan contoh pada bagian alias
+| * 01b0764 (origin/main) Update catatan-git-1.md
+|/
+* 08a8b76 minor changes
+* ae8a2b0 memindahkan referensi dari catatan-git-1 ke README
+* 03c8bfd menambahkan file README.md
+```
+
+lakukan git pull untuk mengambil file perubahan dan akan langsung melakukan merge ke file di local (pull akan mengubah file local sesuai pada remote repository ! (merging)) (merge conflict akan ditampilkan jika ada)
+
+```bash
+$ git pull
+Auto-merging catatan-git-1.md
+CONFLICT (content): Merge conflict in catatan-git-1.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+tampilan merge conflict akan seperti sebelumnya
+
+```bash
+<<<<<< HEAD
+perubahan 1
+=======
+perubahan 2
+>>>>>> 01b07646d7aedeac0a644b0f0d64ae69def529f1
+```
+
+lakukan commit apabila conflict sudah di-resolve
+
+```bash
+$ git commit -m "menambahkan contoh alias"
+[main 537df2a] menambahkan contoh alias
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+lakukan git push, maka akan dilakukan merging
+
+```bash
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 890 bytes | 890.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/hasferrr/belajar-git.git
+   01b0764..537df2a  main -> main
+```
