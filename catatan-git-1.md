@@ -1,6 +1,6 @@
 # Catatan git
 
-catatan ini dibuat dari playlist youtube [GIT & GITHUB](https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf)
+referensi catatan dari playlist youtube [GIT & GITHUB](https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf)
 
 ## Meng-set folder menjadi repository
 
@@ -32,11 +32,13 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
 2. Melakukan commit
 
-    login (digunakan hanya pada saat pertama kali menggunakan git bash)
+    login (digunakan hanya pada saat pertama kali menggunakan git bash) (user dan email bisa disamakan dengan user dan email github)
 
     `git config --global user.email "you@example.com"`
 
     `git config --global user.name "Your Name"`
+
+    config bisa dicek di `git config --list`
 
     melakukan commit
 
@@ -44,7 +46,7 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     melakukan commit tanpa memasukkan ke *Staging Area* (tanpa step 1) (tanpa melaukan `git add`) (hanya berlaku untuk *modified* file, bukan *untrack* file, in which harus dimasukkan ke *Staging Area* terlebih dahulu))
 
-    `git commit -a -m "Deskripsi commit"`
+    `git commit -am "Deskripsi commit"`
 
 3. Untuk mengetahui commit-commit apa saja yang sudah dilakukan
 
