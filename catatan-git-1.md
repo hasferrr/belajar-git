@@ -107,7 +107,7 @@ nothing to commit, working tree clean
 alias yang sering digunakan
 
 ```bash
-$ alias graph="git log --oneline --graph"
+$ alias graph="git log --all --decorate --oneline --graph"
 $ graph
 * 08a8b76 (HEAD -> main, origin/main) minor changes
 * ae8a2b0 memindahkan referensi dari catatan-git-1 ke README
