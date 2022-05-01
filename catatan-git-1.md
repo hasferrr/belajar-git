@@ -32,9 +32,10 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     login (digunakan hanya pada saat pertama kali menggunakan git bash) (user dan email bisa disamakan dengan user dan email github)
 
-    `git config --global user.email "you@example.com"`
-
-    `git config --global user.name "Your Name"`
+    ```bash
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+    ```
 
     config bisa dicek di `git config --list`
 

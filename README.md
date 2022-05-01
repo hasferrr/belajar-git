@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-repository ini digunakan untuk catatan pembelajaran saya ketika belajar git
+repository ini adalah catatan pembelajaran saya ketika belajar git
 
 ## Referensi
 
