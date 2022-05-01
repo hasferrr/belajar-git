@@ -107,5 +107,20 @@ nothing to commit, working tree clean
 alias yang sering digunakan
 
 ```bash
-alias graph="git log --all --decorate --oneline --graph"
+$ alias graph="git log --oneline --graph"
+$ graph
+* 08a8b76 (HEAD -> main, origin/main) minor changes
+* ae8a2b0 memindahkan referensi dari catatan-git-1 ke README
+* 03c8bfd menambahkan file README.md
+* f72a789 menambahkan file catatan-git-3.md
+* c672da4 minor changes in catatan-git-1
+* db8a1aa menghapus file hasfer-resolusi.md
+* 76b3cd4 menambahkan cara merge conflict
+*   33cbce7 merging branch 'add'
+|\
+| * 1a7fa3c menambahkan sumber catatan 1
+* | ea5ca5a menambahkan link sumber pada catatan-git-1
+|/
+* 644c245 mengedit catatan-git-1
+* 16a6b43 mengedit catatan-git-2
 ```
