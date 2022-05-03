@@ -24,7 +24,7 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git add file.format`
 
-    menambah sekaligus (semua file yang ditambahkan, dihapus, diedit) :
+    menambah sekaligus file ke *Staging Area* (semua file yang ditambahkan, dihapus, diedit) :
 
     `git add .`
 
@@ -43,7 +43,7 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git commit -m "Deskripsi commit"`
 
-    melakukan commit tanpa memasukkan ke *Staging Area* (tanpa step 1) (tanpa melaukan `git add`) (hanya berlaku untuk *modified* file, bukan *untrack* file, in which harus dimasukkan ke *Staging Area* terlebih dahulu))
+    melakukan commit tanpa memasukkannya ke *Staging Area* terlebih dahulu (tanpa step 1) (atau tanpa melaukan `git add`) (hanya berlaku untuk *modified* file, bukan *untrack* file, in which *untrack* file harus dimasukkan ke *Staging Area* terlebih dahulu)), commit dilakukan dengan cara
 
     `git commit -am "Deskripsi commit"`
 
@@ -80,14 +80,17 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
 
     `git checkout <hash> -- file.format`
 
-    hash disini adalah lima digit pertama dari hash yang ditampilkan pada log (nomor 3) file yang telah di-commit yang ingin di-checkout
+    hash ini adalah lima digit pertama dari hash yang ditampilkan pada log (nomor 3) file yang telah di-commit yang ingin di-checkout
 
     file yang di-checkout akan masuk ke *Staging Area*
 
-    karena baru masuk ke *Staging Area*, file tersebut harus di-commit terlebih dahulu
+    karena baru masuk ke *Staging Area*, file tersebut harus di-commit terlebih dahulu apabila ingin melakukan perubahan tersebut (rollback)
+
     coba cek menggunakan
 
     `git status`
+
+    untuk commit, seperti biasa
 
     `git commit -m "pesan"`
 

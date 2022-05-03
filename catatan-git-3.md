@@ -91,7 +91,7 @@ Fetch digunakan untuk mendapatkan/melihat perubahan terakhir dari remote reposit
 
 Fetch digunakan untuk mengecek perubahan terakhir dari commit di remote repository
 
-Fetch digunakan apabila terjadi rejection ketika melakukan push karena adanya perubahan pada file/line yang sama yang akan di-push dan file/line pada remote repository (merge/push conflict)
+Fetch digunakan apabila terjadi rejection ketika melakukan push karena adanya perubahan pada file/line yang sama yang akan di-push dengan file/line pada remote repository (merge/push conflict)
 
 ```bash
 $ git push

@@ -86,7 +86,7 @@ ada 2 tipe merge, yaitu
 
 ## Merge conflict
 
-merge dapat terjadi ketika merge dua branch dilakukan, sedangkan kedua branch tersebut mengubah/mengerjakan line/baris yang sama pada suatu file
+merge conflict dapat terjadi ketika merge dua branch dilakukan, sedangkan kedua branch tersebut mengubah/mengerjakan line/baris yang sama pada suatu file
 
 tipe merge ini adalah *three-way merging*
 
