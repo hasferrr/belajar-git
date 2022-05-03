@@ -141,7 +141,7 @@ commands :
 git clone <url>
 git remote add <name> <url>
 git remote -v
-git fetch <repository>
+git fetch <remote_repository>
 git merge <remote>/<branch>
 git push -u origin master
 ```
