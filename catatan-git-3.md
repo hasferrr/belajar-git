@@ -75,7 +75,7 @@ To https://github.com/hasferrr/lagi-belajar.git
   
 2. Tambahkan remote
 
-    push an existing repository from the command line (cara ini ditampilkan di github)
+    push an existing repository from the command line (cara dan command di bawah ditampilkan di github)
 
     branch yang sebelumnya *master* akan berubah menjadi *main*
 
@@ -105,7 +105,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-git status masih menunjukkan origin is ahead/lebih dulu 1 commit karena git mengasumsikan bahwa tidak ada perubahan pada remote repository
+`git status` masih menunjukkan origin is ahead/lebih dulu 1 commit karena git mengasumsikan bahwa tidak ada perubahan pada remote repository
 
 ```bash
 $ git status
@@ -116,7 +116,7 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-git fetch digunakan untuk mengecek dulu dimana letak commit pada remote repository dan mengambil data perubahan (tidak dengan file) tersebut dari remote repo
+`git fetch` digunakan untuk mengecek dulu dimana letak commit pada remote repository dan mengambil data perubahan (tidak dengan file) tersebut dari remote repo
 
 ```bash
 $ git fetch
@@ -153,7 +153,7 @@ $ git log --all --decorate --oneline --graph
 * 03c8bfd menambahkan file README.md
 ```
 
-lakukan git pull untuk mengambil file perubahan dan akan langsung melakukan merge ke file di local (pull akan mengubah file local sesuai pada remote repository ! (merging)) (merge conflict akan ditampilkan jika ada)
+lakukan `git pull` untuk mengambil file perubahan dan akan langsung melakukan merge ke file di local (pull akan mengubah file local sesuai pada remote repository ! (merging)) (merge conflict akan ditampilkan jika ada)
 
 ```bash
 $ git pull
@@ -185,7 +185,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 nothing to commit, working tree clean
 ```
 
-lakukan git push, maka akan dilakukan merging
+lakukan `git push`, maka akan dilakukan merging
 
 ```bash
 $ git push
