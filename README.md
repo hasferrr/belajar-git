@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-Repository ini adalah catatan pembelajaran saya ketika belajar GIT
+Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus markdown
 
 ## Daftar isi
 
