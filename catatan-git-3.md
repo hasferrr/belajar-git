@@ -2,7 +2,7 @@
 
 ## Clone repository dari github ke local
 
-  cloning dengan `git clone <link_https_repo>`
+  cloning dengan `git clone <url_repo>`
 
   ```bash
   $ git clone https://github.com/hasferrr/lagi-belajar.git
@@ -49,7 +49,7 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-lakukan `git push` untuk mengirimkan perubahan file ke github (login dulu apabila diminta)
+lakukan `git push <remote> <branch>` untuk mengirimkan perubahan file ke github (login dulu apabila diminta)
 
 ```bash
 $ git push
@@ -116,7 +116,7 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-`git fetch` digunakan untuk mengecek dulu dimana letak commit pada remote repository dan mengambil data perubahan (tidak dengan file) tersebut dari remote repo
+`git fetch <remote>` digunakan untuk mengecek dulu dimana letak commit pada remote repository dan mengambil data perubahan (tidak dengan file) tersebut dari remote repo
 
 ```bash
 $ git fetch
@@ -153,7 +153,7 @@ $ git log --all --decorate --oneline --graph
 * 03c8bfd menambahkan file README.md
 ```
 
-lakukan `git pull` untuk mengambil file perubahan dan akan langsung melakukan merge ke file di local (pull akan mengubah file local sesuai pada remote repository ! (merging)) (merge conflict akan ditampilkan jika ada)
+lakukan `git pull <remote>` untuk mengambil file perubahan dan akan langsung melakukan merge ke file di local (pull akan mengubah file local sesuai pada remote repository ! (merging)) (merge conflict akan ditampilkan jika ada)
 
 ```bash
 $ git pull
@@ -185,7 +185,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 nothing to commit, working tree clean
 ```
 
-lakukan `git push`, maka akan dilakukan merging
+lakukan `git push <remote> <branch>`, maka akan dilakukan merging
 
 ```bash
 $ git push

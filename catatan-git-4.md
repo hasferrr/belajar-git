@@ -149,3 +149,5 @@ git push -u origin master
 ## Referensi tambahan
 
 [3.5 Git Branching - Remote Branches](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches)
+
+[Git Remote](https://www.javatpoint.com/git-remote)
