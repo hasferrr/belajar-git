@@ -31,6 +31,10 @@ Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus mar
 
 - Multiple Remote
 
+[Catatan Git 5](catatan-git-5.md)
+
+- Git Rebase
+
 ## Referensi
 
 [GIT & GITHUB](https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf)
