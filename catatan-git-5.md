@@ -113,6 +113,8 @@ Could not apply a9b351e... menambahkan file catatan-git-5.md
 
 > jika rebase ada conflict, resolve dulu dan lakukan **`git add`** lalu dilanjutkan dengan **`git rebase --continue`**
 
+> Watch this video : [Resolve merge conflict during git rebase](https://www.youtube.com/watch?v=RGtwxYqkkas)
+
 lihat graph-nya setelah rebase, sudah sejajar (artinya *cat5* seakan-akan dibuat setelah commit pada *main* 686ad32 "menambahkan cara rebase", bukan setelah commit 5d8aa00 "Create catatan-git-5.md" seperti sebelumnya)
 
 ```bash
