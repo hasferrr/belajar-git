@@ -1,6 +1,6 @@
-# Catatan GIT
+<img src="https://img.icons8.com/color/48/000000/git.svg" align="right" width="120px"/>
 
-## Deskripsi
+# Catatan GIT
 
 Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus markdown
 
