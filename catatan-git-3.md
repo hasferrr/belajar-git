@@ -1,6 +1,6 @@
-# Catatan Git Remote HTTPS method
+# Git Remote
 
-## Clone repository dari github ke local
+## Clone repository dari github ke local (HTTPS method)
 
   cloning dengan `git clone <url_repo>`
 
@@ -14,6 +14,12 @@
   Receiving objects: 100% (107/107), 50.33 KiB | 613.00 KiB/s, done.
   Resolving deltas: 100% (22/22), done.
   ```
+
+## Clone repository dari github ke local (SSH method)
+
+Buka link berikut : [GitHub Docs - About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+
+baca dan ikuti step2nya
 
 ## Remote git dari local
 
