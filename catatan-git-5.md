@@ -4,15 +4,13 @@
 
 Rebase digunakan untuk menggeser/memindahkan dasar branch dari suatu branch tertentu ke commit main/master yang baru (yg menjadi penyebab *three-way merging*)
 
-ilustrasi dari javapoint :
+ilustrasi dari javatpoint :
 
 ![rebase](https://static.javatpoint.com/tutorial/git/images/git-rebase.png)
 
 selanjutnya, apabila kita melakukan `merging`, tidak lagi *three-way merging*, melainkan *fast forward merging* sehingga tidak menambahkan commit baru ketika nantinya dilakukan merging
 
 rebase digunakan untuk memudahkan pengguna menge-track log/graph history dari commit-commit yang sudah dilakukan
-
-More : [Git Rebase](https://www.javatpoint.com/git-rebase)
 
 ## Cara rebase
 
@@ -127,3 +125,9 @@ $ gh
 ```
 
 selanjutnya, dapat dilakukan `merge` (fast forward) atau `rebase` (sama aja kayak merge (soalnya fast forward))
+
+## Lain-lain mengenai git rebase
+
+[A Better Git Workflow with Rebase](https://www.youtube.com/watch?v=f1wnYdLEpgI)
+
+[Git Rebase - javatpoint](https://www.javatpoint.com/git-rebase)
