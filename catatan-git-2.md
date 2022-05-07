@@ -51,6 +51,12 @@
 
     branch yang belum di-merge apabila dihapus, akan muncul peringatan bahwa branch tersebut belum dimerge, gunakan `-D` untuk menghapusnya
 
+5. Membuat branch dan langsung checkout
+
+    ```bash
+    git checkout -b <branch>
+    ```
+
 ## Merge
 
 ada 2 tipe merge, yaitu
