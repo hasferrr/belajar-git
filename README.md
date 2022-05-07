@@ -11,7 +11,7 @@ Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus mar
 - set folder menjadi repository
 - commit pada git
 - git log
-- git checkout
+- git checkout *hash* -- *file*
 - Membuat *alias*
 
 [Catatan Git 2](catatan-git-2.md)
@@ -24,7 +24,7 @@ Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus mar
 
 - Clone repository dari github ke local
 - Remote git dari local
-- 'Clone' atau remote repository dari local ke github (di github belum ada repository tersebut)
+- Remote *remote repository* dari local ke github
 - Git Fetch dan Pull
 
 [Catatan Git 4](catatan-git-4.md)
@@ -34,6 +34,11 @@ Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus mar
 [Catatan Git 5](catatan-git-5.md)
 
 - Git Rebase
+
+[Catatan Git 6](catatan-git-6.md)
+
+- Ignoring Files (.gitignore)
+- Undoing Things (--amend)
 
 ## Referensi
 
