@@ -35,3 +35,11 @@ One of the common undos takes place when you commit too early and possibly forge
 ```bash
 git commit --amend
 ```
+
+As an example, if you commit and then realize you **forgot to stage the changes** in a file you wanted to add to this commit, you can do something like this:
+
+```bash
+git commit -m 'Initial commit'
+git add forgotten_file
+git commit --amend
+```
