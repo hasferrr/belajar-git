@@ -45,3 +45,5 @@ Repository ini adalah catatan pembelajaran saya ketika belajar git sekaligus mar
 [GIT & GITHUB](https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf)
 
 [Git Tutorial - javatpoint](https://www.javatpoint.com/git)
+
+[Git - Book](https://git-scm.com/book/en/v2)
