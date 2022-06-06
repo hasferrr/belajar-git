@@ -99,7 +99,7 @@ tipe merge ini adalah *three-way merging*
 contohnya, misal branch *master* akan merging dengan branch *branch-2*
 
 ```bash
-$ git merge add
+$ git merge branch-2
 Auto-merging catatan-git-1.md
 CONFLICT (content): Merge conflict in catatan-git-1.md
 Automatic merge failed; fix conflicts and then commit the result.
@@ -115,7 +115,7 @@ sumber catatan
 >>>>>> branch-2
 ```
 
-`<<< HEAD` merupakan current change atau branch saat ini, `>>> branch-2` merupakan incoming change atau branch yang mau digabungkan
+`<<< HEAD` merupakan current change atau branch saat ini (branch *master*), `>>> branch-2` merupakan incoming change atau branch yang mau digabungkan
 
 tinggal diedit sesuai preferensi dari conflict tersebut
 
