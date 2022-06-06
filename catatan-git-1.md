@@ -14,6 +14,17 @@ On branch master
 nothing to commit, working tree clean
 ```
 
+## Konfigurasi awal
+
+login (digunakan hanya pada saat pertama kali menggunakan git bash) (user dan email bisa disamakan dengan user dan email github)
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+config bisa dicek di `git config --list`
+
 ## Melakukan commit pada git
 
 Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
@@ -29,15 +40,6 @@ Setelah melakukan save file di lokal, untuk melakukan commit, lakukan :
     `git add .`
 
 2. Melakukan commit
-
-    login (digunakan hanya pada saat pertama kali menggunakan git bash) (user dan email bisa disamakan dengan user dan email github)
-
-    ```bash
-    git config --global user.email "you@example.com"
-    git config --global user.name "Your Name"
-    ```
-
-    config bisa dicek di `git config --list`
 
     melakukan commit
 
